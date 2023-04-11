@@ -16,7 +16,7 @@ group = 'org.gradle'
 version = '0.2'
 
 dependencies {
-    compile gradleApi()
+    implementation gradleApi()
 }
 
 repositories {

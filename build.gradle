@@ -9,7 +9,6 @@ buildscript {
 
 apply plugin: "java"
 apply plugin: "idea"
-apply plugin: "bintray"
 apply plugin: "maven-publish"
 
 group = 'org.gradle'
@@ -80,18 +79,3 @@ publishing {
         }
     }
 }
-
-bintray {
-    user = bintrayUser
-    key = bintrayKey
-    publications = ['mavenJava']
-    pkg {
-        userOrg = 'gradle'
-        repo = 'gradle-plugins'
-        name = 'gradle-hello-world-plugin'
-        desc = "The “Hello World” of Gradle plugins. Adds a task named ‘helloWorld’ that, you guessed it, prints “Hello world!”"
-        licenses = ['Apache-2.0']
-        labels = ["publish"]
-    }
-}
-
